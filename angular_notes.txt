@@ -1,0 +1,7 @@
+MODULE:
+
+Module contains different components of an angular app.
+
+ng-app is called a directive.It tells Angular JS that myApp module
+will live within the <body> element, termed the application's scope.
+In other words, ng-app directive is used to define application scope.
