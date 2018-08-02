@@ -5,3 +5,42 @@ Module contains different components of an angular app.
 ng-app is called a directive.It tells Angular JS that myApp module
 will live within the <body> element, termed the application's scope.
 In other words, ng-app directive is used to define application scope.
+ Expressions are used to display values on the page.
+ The value of title showed up when we viewed the app in the browser.
+
+
+Big Picture:
+Views - Represent webpage as we show the user  Directives - A special angular feature that drive Html and teach html new tricks and Filters - filter or format data
+Controllers - What is controller. How can you bind data in a controller to a view using something
+called a scope and how we can place controllers into containers called modules  ,
+scope, module
+Routing - This is a very important feature of Angular JS.A special piece of framework called Route Provider that
+we can use to provide routes that the user might want to navigate to. For eg: when they click
+a button, they might go to a specific route or when they click a hyperlink
+they might go to another route.
+
+Services and Factories: These are used to keep code DRY. They are Singleton objects (OBJECTS THAT ARE CREATED ONCE IN MEMORY). We can use them for things like business rules, AJAX requests etc(similar to how we use Util in React)
+
+Animation: css transitions and animations how how to use them with Angular directives.
+
+SPA Overview (Single Page Applications)
+Angular JS
+Key players in Angular JS
+Angular JS Documentation
+
+
+SPA Overview:
+SPA allow different views to be loaded into a shell page as the user interacts with the page.
+views can be replaced with other Views
+A standard app requires the entire page to be loaded, but SPA allows the specific <div> to be reloaded.
+This makes it fast, fluid and responsive.
+SPAs maintain a history, so we have access to previous views.
+
+
+Technologies:
+
+DOM Manipulation
+Manage history
+Routing
+AJAX
+Data Binding
