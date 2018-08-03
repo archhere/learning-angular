@@ -61,3 +61,26 @@ Now you have created your first API end point.You will see request and response.
 {"message": "This is working"}
 Now save and go to actions, deploy api.
 In staging, you can add dev,as this is under development. This would generate an url, open the url with api end point, first-api-test. You would get the json indicated above.
+
+
+Core Serverless Services
+Business Logic with Lambda and API gateway
+Date Storage with DynamoDB
+Authentication with cognito
+Content Delivery and hosting with S3, CloudFront and Route53
+
+Which services do we need?
+Lets imagine, we have an angular app. We need to host this somewhere. A great place to host static apps, is
+S3.
+But for web app, we need to store and fetch data, so we need restful API. The service we need is API Gateway.
+We need some service to execute code. This is why we need lambda.This is used to execute code on demand.
+We also need a database. We will use DynamoDB (this is a noSQL database.)
+For authenticating users, we would use cognito.We can also protect API so that only authenticated users can access
+certain API end points. We also need our own url for our app. We can use Route 53 to register and configure our own
+domain so that whenever we receive a request to this domain, we can load our s3 bucket for this.
+Cache - Cloudfront for caching. To improve performance, so that people using our app all over the world will have better performance.
+We will build our own serverless App
+1) We will have some API gateways
+2) We will have some Lambda functions to execute this code.
+3) We will also have a database DynamoDB
+4) s3 is simple storage service
