@@ -1,0 +1,23 @@
+Amazon has many data centers. Each of these data center regions have availability
+zones. This is so, if one zone fails, the others work. So our service is always online.
+This is important, bcoz we can choose which zone we want to host our server in.
+
+All Services
+You pick the service you want and use it to solve your specific problem.
+
+Lets start with EC2
+EC2 stands for Elastic Cloud Computing. You can start virtual servers. You can start
+instances , virtual instances on servers. You can define how powerful these servers should be.
+You can do anything you want with these instances.You can install a web server, a php interpreter or
+anything you want and host a website.
+
+
+Solutions:
+They make solving your problem easier, as aws helps you with it.
+
+
+Lets use services:
+
+Open services, EC2
+
+i am  - identity and access management
