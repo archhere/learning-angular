@@ -21,3 +21,43 @@ Lets use services:
 Open services, EC2
 
 i am  - identity and access management
+
+dashboard:
+Groups
+Users
+rules
+Policies
+
+
+Traditional                        |                           Serverless
+
+Provision capacity                                       Runs on Demand
+How much server capacity?                                Unlimited capacity (Only pay for code execution)
+CPU, RAM, MEMORY                                         Scales automatically (pay what you need)
+Update OS                                                Runs on managed AWS infrastructure
+Lots of overhead                                         Code runs in uptodate environment. Great for SPA and APIs
+Great support for full stack apps
+
+
+Start:
+
+1) search api gateway
+2) click on "get started"
+3) select new Api
+4) Give it any name and hit create API
+This will create API for you.
+Lambda is just a code on demand thing.
+There are advanced ways of creating API, for eg by importing API definition files.
+But we are focussing on basics here.
+
+5) Click on actions and "Create Resource". For Resource Name, we can give any name
+"first-api-test" and hit "create Resource"
+
+6) We cant use the resource yet.
+Lets go to actions and click "create Method."
+In this case, lets choose GET.Click tick mark. Now select  "mock", click save.
+Now you have created your first API end point.You will see request and response. Go to "Integration response" and click on downward arrow here.In Body Mapping template, application /json.
+
+{"message": "This is working"}
+Now save and go to actions, deploy api.
+In staging, you can add dev,as this is under development. This would generate an url, open the url with api end point, first-api-test. You would get the json indicated above.
