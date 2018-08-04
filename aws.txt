@@ -41,7 +41,7 @@ Great support for full stack apps
 
 Start:
 
-1) search api gateway
+1) search api gateway (it can also be found under networking & content delivery)
 2) click on "get started"
 3) select new Api
 4) Give it any name and hit create API
@@ -84,3 +84,35 @@ We will build our own serverless App
 2) We will have some Lambda functions to execute this code.
 3) We will also have a database DynamoDB
 4) s3 is simple storage service
+
+
+Application                 -->         Rest API     -->                Action
+
+Web App (eg: Angular App)            Define API end points              Directly access some AWS services
+Mobile App                           & HTTP Methods(eg: POST/book)
+Other Source (eg: POSTMAN)              Authorize Access                Run Lambda Code (and forward Request Data)
+
+Stages are like deployed snapshots of your API.
+
+End point has 2features - path and type of request
+
+METHOD REQUEST:
+
+Handles incoming request and makes sure it has certain data and certain shape.
+
+INTEGRATION REQUEST:
+
+Is to trigger the end point , using mock or langda
+It also extracts data and passes it on to the end point.
+So, it transforms and extracts data.
+
+
+METHOD RESPONSE:
+
+Defines the Shape of our response
+
+Response header and Response Body.
+
+INTEGRATION RESPONSE:
+
+Fills that shape with life.Its non-binding.
