@@ -116,3 +116,32 @@ Response header and Response Body.
 INTEGRATION RESPONSE:
 
 Fills that shape with life.Its non-binding.
+
+Swagger definition file:
+
+Import a swagger text
+
+
+Configure a proxy resource:
+This means that this acts as a single catch-all resource to catch all our responses.
+If you catch all incoming requests and methods and forward them to and forward them to
+whichever action you are executing, this action can be a lambda function.
+Now, since lambda supports Node and Express, you can use this lambda function,
+and basically create a full stack approach using serverless approach using this.
+
+API gateway CORS:
+To understand this, we need to know what CORS is.
+Cross Origin Resource Sharing. It is a security model that prevents another server from accessing our server.
+
+Lambda:
+
+AWS Lambda is a a service which allows you to host your code on it and run it in certain  events.
+
+Event Source                ----> Code (written in nodejs python, java or C# )
+
+S3(EG: FILE could trigger a lambda function, which could transform it (compress it analyse it etc))
+Cloudwatch (scheduled)
+API Gateway (HTTP request)
+
+Result:  Interact with other AWS services
+Return Response
