@@ -38,6 +38,11 @@ Update OS                                                Runs on managed AWS inf
 Lots of overhead                                         Code runs in uptodate environment. Great for SPA and APIs
 Great support for full stack apps
 
+Why do serverless:
+1) No servers to provision or manage
+2) Scales for usage. Lambda scales up and down based on incoming traffic without you having to worry about it.
+3) You never pay for idle. You only pay when you use something.
+4) Availability and fault tolerance built in.
 
 Start:
 
