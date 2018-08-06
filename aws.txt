@@ -188,3 +188,16 @@ Cloud formation is our service for provisioning and managing a collection of rel
 Our application = cloud formation stack
 Input.yaml file and output provisioned AWS resources.
 Cloud formation was created for infrastructure rather than for serverless functions.
+
+SAM Local:
+
+CLI tool for local testing of serverless apps.
+
+Leverages Docker images to mimic Lambda's execution environment.
+Evaluates lambda functions and API.
+sam validate : validates sam template
+
+
+npm install -g aws-sam-local
+
+Lambda + serverless 
