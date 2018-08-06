@@ -67,6 +67,27 @@ c) compiles to JS
 
 namespace is called 'ng'  'ngfor', 'ngif' etc.
 
+Angular architecture has the following:
+Modules : Modules are the basic fundamental of angular.Angular has a modular
+system.
+Components :  Everything we create is a component. We have to seperate each and Everything
+in a new component.
+Template: Every component has a template.How the component looks and its features are decided by
+the template.
+Metadata: Data for other data.
+
+Ng module comes from Angular core. You can find this in Node Modules.
+Databinding: We are using javascript framework. So we have to modify DOM,template
+as per our requirement. We use databinding to preserve scope of object/instance as needed.
+Data we bind to any tag or something.
+Ng modules: Modules are just a collection of similar kind of functions in a set.
+1) Every angular app must have atleast one module called App Module.
+2) Class with @NgModule decorator. Decorators are functions that modify javascript classes.
+Classes of javascript can be modified and enhanced by decorators.
+
+Components:
+Components are class that interacts with view (basically DOM).
+There are many life cycle hooks like 'ngOnInit' etc..
 
 cli stands for command line interface
 Terminal:
@@ -75,4 +96,51 @@ npm install -g @angular/cli
  This was just cli. Now lets install angular project
 ng new angular5
 
-The main thing is src folder.Inside this, important thing is app.js
+The main thing is src folder.Inside this, important thing is app folder.
+
+
+Similar to how we have an entry file in our bundle in React, in angular, we bootstrap the first file.
+app.module.ts
+
+bootstrap: [AppComponent]
+
+
+ngOnInit() {
+console.log('hello')
+}
+
+This is similar to ComponentDidMount()
+
+ng serve -o     (to open file in browser)
+
+
+export class AppComponent {
+title ="MyApp";
+message(value) {
+console.log(value)
+}
+
+ngOnInit(){
+ this.message(this.title)
+ }
+}
+
+
+Component decorator has 3 types of metadata:
+@component({
+  selector: 'appname',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+
+
+Decorators are functions that modify javascript classes. For eg,
+here, based selector appname is caught and rendered in index.html
+
+
+Lets generate a new component
+ng g component Marvelheros
+
+When you do this, a new folder is created in app folder and it has similar info to app.component
+that was there before
+The only thing it doesnt have is app.module, which is understandable as there can be only 1 app.module.
