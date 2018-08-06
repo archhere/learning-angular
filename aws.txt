@@ -150,3 +150,41 @@ API Gateway (HTTP request)
 
 Result:  Interact with other AWS services
 Return Response
+
+
+Examples:
+
+FINRA, Product Insight(no action required to handle fluctuations in scale)
+
+ALM for serverless applications:
+author, build, test, deploy
+
+there are 2 flows here - author, test, debug loop (this loop can go on for ever)
+
+New and improved lambda console:
+Cloud9 editor within the Lambda console
+Function graph
+Persisted test events
+Monitoring view (jump to logs for any timeframe)
+Invent
+
+CI/CD:
+Source, Build
+
+
+Lambda console Editor shortcuts:
+
+Full Screen Cmd + Shift + F
+Cache file locally Cmd + S
+Save (UpdateFunctionCode) Cmd + Shift + U
+Test Cmd + I
+Configure test events Cmd + J
+
+
+Meet SAM : Serverless Application Model
+Cloud Formation:
+
+Cloud formation is our service for provisioning and managing a collection of related AWS services.
+Our application = cloud formation stack
+Input.yaml file and output provisioned AWS resources.
+Cloud formation was created for infrastructure rather than for serverless functions.
