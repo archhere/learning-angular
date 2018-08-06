@@ -67,6 +67,12 @@ c) compiles to JS
 
 namespace is called 'ng'  'ngfor', 'ngif' etc.
 
+
+cli stands for command line interface
 Terminal:
 Make sure you have node module.
-npm install @angular/cli -g
+npm install -g @angular/cli
+ This was just cli. Now lets install angular project
+ng new angular5
+
+The main thing is src folder.Inside this, important thing is app.js
