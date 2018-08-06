@@ -144,3 +144,7 @@ ng g component Marvelheros
 When you do this, a new folder is created in app folder and it has similar info to app.component
 that was there before
 The only thing it doesnt have is app.module, which is understandable as there can be only 1 app.module.
+If you open app module, you will find marvelheros already imported and also added to the declarations.
+(In react, all of this was done by bundle.js)
+
+Data binding is just interaction between component and template.
